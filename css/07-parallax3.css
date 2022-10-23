@@ -1,0 +1,63 @@
+#nav{
+    position:fixed;
+    right:20px;
+    top:50%;
+    transform: translateY(-50%);
+    z-index:1000;
+}
+#nav>li{
+    margin:5px 0;
+}
+#nav>li>a{
+    display: block;
+    width:10px;
+    height:10px;
+    background:white;
+    border-radius: 10px;
+    border:1px solid #ccc;
+}
+#nav>li a.current{
+    background-color: olive;
+}
+section{
+    width:100%;
+    color:white;
+    padding:150px 0 0 0;
+}
+#section1{
+    background: url(../images/firstBG.jpg) fixed;
+    height: 650px;
+}
+#section2{
+    background: url(../images/secondBG.jpg) center fixed;
+    height: 1200px;
+    padding:0;
+}
+#section2 .shoes{
+    background: url(../images/trainers.png) no-repeat 70% 0 fixed;
+    /* 70% 0 은 x,y축 위치값 */
+    width:900px;
+    /* width를 줘야 이미지가 나타난다 */
+    /* 신발이 안잘릴 정도의 width를 줘야한다 */
+    height:1200px;
+    position:absolute;
+}
+#section3{
+    background: url(../images/thirdBG.jpg) fixed;
+    height: 650px;
+}
+#section4{
+    background: url(../images/banner002.png) fixed;
+    height: 500px;
+}
+.innerBox{
+    width:1000px;
+    margin:0 auto;
+}
+.innerBox h2{
+    font-size: 30px;
+    padding:50px 0 ;
+}
+.innerBox p{
+    width:300px;
+}

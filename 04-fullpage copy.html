@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fullpage.css">
+    <style>
+        #menu{
+            position:fixed;
+            z-index: 1000;
+            display: flex;
+        }
+        #menu>li{
+            margin:10px;
+        }
+        #fullpage .section{
+            padding-top:100px;
+        }
+    </style>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/fullpage.js"></script>
+</head>
+<body>
+    <ul id="menu">
+        <li><a href="#section1">menu1</a></li>
+        <li><a href="#section2">menu2</a></li>
+        <li><a href="#section3">menu3</a></li>
+        <li><a href="#section4">menu4</a></li>
+    </ul>
+    <div id="fullpage">
+        <div class="section">
+            <div class="mainBanner">
+              <ul class="imgBanner">
+                <!-- css로 배경넣기 -->
+                <li>
+                  <div class="content active">
+                    <h2>안경,진정성</h2>
+                    <p>
+                      편안한 상담과 정확한 시력검사,<br />
+                      전문가의 가공기술로 올바른 안경을 만듭니다.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="content">
+                    <h2>INTEGRITY</h2>
+                    <p>
+                      안경,진정성은 전문가인 안경사의 직업적 진실성을<br />
+                      중요시 여깁니다. 객관적이고 올바른 시력검사를<br />
+                      통해 소중한 눈의 가치를 완성합니다.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="content">
+                    <h2>INTERIOR</h2>
+                    <p>
+                      시선이 머무는 예쁜 안경원<br />
+                      안경,진정성은 차별화된<br />
+                      인테리어를 선보입니다.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="content">
+                    <h2>CONCENTRATION</h2>
+                    <p>
+                      나와 당신, 우리들의 더 나은 시생활을 위해<br />
+                      안경,진정성은 집중합니다.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+              <ul class="pager">
+                <li class="current"><a href="#void">1</a></li>
+                <li><a href="#void">2</a></li>
+                <li><a href="#void">3</a></li>
+                <li><a href="#void">4</a></li>
+              </ul>
+              <div class="downArrow">
+                <a href="#void"
+                  ><img src="images/circle_down_arrow.svg" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="section">
+            <div class="brandWrap">
+              <h2 class="title">BRANDS</h2>
+              <div class="brandsBg">
+                <ul class="tab">
+                  <li><a href="">EYEWEAR</a></li>
+                  <li><a href="">LENS</a></li>
+                  <li><a href="">CONTACT LENS</a></li>
+                </ul>
+                <div class="tabList">
+                  <!-- css로 배경넣기 -->
+                  <div class="eyewear">
+                    <div class="innerBox">
+                      <div class="squareWrap">
+                        <ul class="square">
+                          <li class="active">
+                            <a href="#void">
+                              <img src="images/nineAccord.jpg" alt="" />
+                              <div class="txt">
+                                <p>NINE ACCORD</p>
+                                <p>
+                                  클래식함으로 안경의<br />
+                                  품격을 높인 하우스브랜드
+                                </p>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#void">
+                              <img src="images/manomos.jpg" alt="" />
+                              <div class="txt">
+                                <p>MANOMOS</p>
+                                <p>
+                                  모던하면서도 클래식한 스타일을<br />
+                                  추구하는 하우스브랜드
+                                </p>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#void">
+                              <img src="images/icBerlin.jpg" alt="" />
+                              <div class="txt">
+                                <p>IC! BERLIN</p>
+                                <p>
+                                  심플한 구조와 뛰어난 내구성을 <br />
+                                  자랑하는 독일 하우스브랜드
+                                </p>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#void">
+                              <img src="images/ashCroft.jpg" alt="" />
+                              <div class="txt">
+                                <p>ASH CROFT</p>
+                                <p>
+                                  고전적인 가치에 현대의 매력을<br />
+                                  부여한 아이웨어 브랜드
+                                </p>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#void">
+                              <img src="images/anneBalentin.jpg" alt="" />
+                              <div class="txt">
+                                <p>ANNE BALENTIN</p>
+                                <p>
+                                  독창적인 디자인과 색감으로<br />
+                                  사랑받는 프랑스 브랜드
+                                </p>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#void">
+                              <img src="images/carin.jpg" alt="" />
+                              <div class="txt">
+                                <p>CARIN</p>
+                                <p>
+                                  모던 컨템포러리 감성의 <br />
+                                  국내 아이웨어 브랜드
+                                </p>
+                              </div>
+                            </a>
+                          </li>
+                        </ul>
+                        <div class="arrowMore">
+                          <div class="more">
+                            <p><a href="#void">VIEW ALL</a></p>
+                          </div>
+                          <ul class="arrow">
+                            <li>
+                              <a href="#void"
+                                ><img src="images/left_arrow.png" alt=""
+                              /></a>
+                            </li>
+                            <li>
+                              <a href="#void"
+                                ><img src="images/right_arrow.png" alt=""
+                              /></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="cirWrap">
+                        <ul class="cir">
+                          <li>
+                            <a href="#void"
+                              ><img src="images/nineAccord.jpg" alt=""
+                            /></a>
+                          </li>
+                          <li>
+                            <a href="#void"
+                              ><img src="images/manomos.jpg" alt=""
+                            /></a>
+                          </li>
+                          <li>
+                            <a href="#void"
+                              ><img src="images/icBerlin.jpg" alt=""
+                            /></a>
+                          </li>
+                          <li>
+                            <a href="#void"
+                              ><img src="images/ashCroft.jpg" alt=""
+                            /></a>
+                          </li>
+                          <li>
+                            <a href="#void"
+                              ><img src="images/anneBalentin.jpg" alt=""
+                            /></a>
+                          </li>
+                          <li>
+                            <a href="#void"
+                              ><img src="images/carin.jpg" alt=""
+                            /></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lens">
+                    <div class="innerBox">
+                      <div class="squareWrap">
+                        <ul class="square">
+                          <li class="active">
+                            <a href="#void">
+                              <img src="images/zeiss.jpg" alt="" />
+                              <div class="txt">
+                                <p>ZEISS</p>
+                                <p>
+                                  최적의 편안한 시야를 제공하는 <br />
+                                  전 세계 안경 렌즈 산업을 <br />
+                                  선도하는 렌즈 제조사
+                                </p>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#void">
+                              <img src="images/nikon.jpg" alt="" />
+                              <div class="txt">
+                                <p>NIKON</p>
+                                <p>
+                                  긴 역사를 지닌 초정밀 광학 <br />
+                                  전문기술 바탕의 안경 렌즈 <br />
+                                  브랜드
+                                </p>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#void">
+                              <img src="images/hoya.jpg" alt="" />
+                              <div class="txt">
+                                <p>HOYA</p>
+                                <p>
+                                  내구성 높은 안경 렌즈 제작 <br />
+                                  기술을 보유한 일본 렌즈 브랜드
+                                </p>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#void">
+                              <img src="images/essilor.jpg" alt="" />
+                              <div class="txt">
+                                <p>ESSILOR</p>
+                                <p>
+                                  고객의 눈 건강을 최우선으로 <br />
+                                  생각하는 세계 최고의 처방 렌즈 <br />
+                                  브랜드
+                                </p>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#void">
+                              <img src="images/chemi.jpg" alt="" />
+                              <div class="txt">
+                                <p>CHEMI</p>
+                                <p>
+                                  오랜 노하우와 연구로 세계로 <br />
+                                  도약하는 국내 렌즈 브랜드
+                                </p>
+                              </div>
+                            </a>
+                          </li>
+                        </ul>
+                        <div class="arrowMore">
+                          <div class="more">
+                            <p><a href="#void">VIEW ALL</a></p>
+                          </div>
+                          <ul class="arrow">
+                            <li>
+                              <a href="#void"
+                                ><img src="images/left_arrow.png" alt=""
+                              /></a>
+                            </li>
+                            <li>
+                              <a href="#void"
+                                ><img src="images/right_arrow.png" alt=""
+                              /></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="cirWrap">
+                        <ul class="cir">
+                          <li>
+                            <a href="#void"
+                              ><img src="images/zeiss.jpg" alt=""
+                            /></a>
+                          </li>
+                          <li>
+                            <a href="#void"
+                              ><img src="images/nikon.jpg" alt=""
+                            /></a>
+                          </li>
+                          <li>
+                            <a href="#void"><img src="images/hoya.jpg" alt="" /></a>
+                          </li>
+                          <li>
+                            <a href="#void"
+                              ><img src="images/essilor.jpg" alt=""
+                            /></a>
+                          </li>
+                          <li>
+                            <a href="#void"
+                              ><img src="images/chemi.jpg" alt=""
+                            /></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contactLens">
+                    <div class="innerBox">
+                      <div class="squareWrap">
+                        <ul class="square">
+                          <li class="active">
+                            <a href="#void">
+                              <img src="images/acuvue.jpg" alt="" />
+                              <div class="txt">
+                                <p>ACUVUE</p>
+                                <p>
+                                  선명한 시야와 편안한 착용감을<br />
+                                  선사하는 콘택트렌즈 브랜드
+                                </p>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#void">
+                              <img src="images/bauschlomb.jpg" alt="" />
+                              <div class="txt">
+                                <p>BAUSCHLOMB</p>
+                                <p>
+                                  눈 보호와 시력향상을 최우선으로<br />
+                                  하는 눈 건강분야에서 손꼽히는<br />
+                                  브랜드
+                                </p>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#void">
+                              <img src="images/alcon.jpg" alt="" />
+                              <div class="txt">
+                                <p>ALCON</p>
+                                <p>
+                                  시력개선을 돕는 안과 치료<br />
+                                  분야의 글로벌 리더 브랜드
+                                </p>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#void">
+                              <img src="images/coopervision.jpg" alt="" />
+                              <div class="txt">
+                                <p>COOPERVISION</p>
+                                <p>
+                                  혁신적이며 광범위한 콘택트렌즈
+                                  <br />
+                                  처방 옵션을 보유한 브랜드
+                                </p>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#void">
+                              <img src="images/interojo.jpg" alt="" />
+                              <div class="txt">
+                                <p>INTEROJO</p>
+                                <p>
+                                  최고의 건강과 아름다움을<br />
+                                  제공하는 콘택트렌즈 브랜드
+                                </p>
+                              </div>
+                            </a>
+                          </li>
+                        </ul>
+                        <div class="arrowMore">
+                          <div class="more">
+                            <p><a href="#void">VIEW ALL</a></p>
+                          </div>
+                          <ul class="arrow">
+                            <li>
+                              <a href="#void"
+                                ><img src="images/left_arrow.png" alt=""
+                              /></a>
+                            </li>
+                            <li>
+                              <a href="#void"
+                                ><img src="images/right_arrow.png" alt=""
+                              /></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="cirWrap">
+                        <ul class="cir">
+                          <li>
+                            <a href="#void"
+                              ><img src="images/acuvue.jpg" alt=""
+                            /></a>
+                          </li>
+                          <li>
+                            <a href="#void"
+                              ><img src="images/bauschlomb.jpg" alt=""
+                            /></a>
+                          </li>
+                          <li>
+                            <a href="#void"
+                              ><img src="images/alcon.jpg" alt=""
+                            /></a>
+                          </li>
+                          <li>
+                            <a href="#void"
+                              ><img src="images/coopervision.jpg" alt=""
+                            /></a>
+                          </li>
+                          <li>
+                            <a href="#void"
+                              ><img src="images/interojo.jpg" alt=""
+                            /></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <div class="lens">
+                <div class="arrowMore">
+                  <ul class="arrow">
+                    <li>
+                      <a href="#void"><img src="images/left_arrow.png" alt="" /></a>
+                    </li>
+                    <li>
+                      <a href="#void"><img src="images/right_arrow.png" alt="" /></a>
+                    </li>
+                  </ul>
+                  <div class="more">
+                    <p><a href="#void">VIEW ALL</a></p>
+                  </div>
+                </div>
+                <div class="innerBox">
+                  <ul class="square">
+                    <li>
+                      <a href="#void">
+                        <img src="images/zeiss.jpg" alt="" />
+                        <div class="txt">
+                          <p>ZEISS</p>
+                          <p>
+                            최적의 편안한 시야를 제공하는 전 세계 안경 렌즈 산업을
+                            선도하는 렌즈 제조사
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#void">
+                        <img src="images/nikon.jpg" alt="" />
+                        <div class="txt">
+                          <p>NIKON</p>
+                          <p>
+                            긴 역사를 지닌 초정밀 광학 전문기술 바탕의 안경 렌즈
+                            브랜드
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#void">
+                        <img src="images/hoya.jpg" alt="" />
+                        <div class="txt">
+                          <p>HOYA</p>
+                          <p>
+                            내구성 높은 안경 렌즈 제작 기술을 보유한 일본 렌즈 브랜드
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#void">
+                        <img src="images/essilor.jpg" alt="" />
+                        <div class="txt">
+                          <p>ESSILOR</p>
+                          <p>
+                            고객의 눈 건강을 최우선으로 생각하는 세계 최고의 처방 렌즈
+                            브랜드
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#void">
+                        <img src="images/chemi.jpg" alt="" />
+                        <div class="txt">
+                          <p>CHEMI</p>
+                          <p>오랜 노하우와 연구로 세계로 도약하는 국내 렌즈 브랜드</p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="cir">
+                    <li>
+                      <a href="#void"><img src="images/zeiss.jpg" alt="" /></a>
+                    </li>
+                    <li>
+                      <a href="#void"><img src="images/nikon.jpg" alt="" /></a>
+                    </li>
+                    <li>
+                      <a href="#void"><img src="images/hoya.jpg" alt="" /></a>
+                    </li>
+                    <li>
+                      <a href="#void"><img src="images/essilor.jpg" alt="" /></a>
+                    </li>
+                    <li>
+                      <a href="#void"><img src="images/chemi.jpg" alt="" /></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="contactLens">
+                <div class="arrowMore">
+                  <ul class="arrow">
+                    <li>
+                      <a href="#void"><img src="images/left_arrow.png" alt="" /></a>
+                    </li>
+                    <li>
+                      <a href="#void"><img src="images/right_arrow.png" alt="" /></a>
+                    </li>
+                  </ul>
+                  <div class="more">
+                    <p><a href="#void">VIEW ALL</a></p>
+                  </div>
+                </div>
+                <div class="innerBox">
+                  <ul class="square">
+                    <li>
+                      <a href="#void">
+                        <img src="images/acuvue.jpg" alt="" />
+                        <div class="txt">
+                          <p>ACUVUE</p>
+                          <p>
+                            선명한 시야와 편안한 착용감을 선사하는 콘택트렌즈 브랜드
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#void">
+                        <img src="images/bauschlomb.jpg" alt="" />
+                        <div class="txt">
+                          <p>BAUSCHLOMB</p>
+                          <p>
+                            눈 보호와 시력향상을 최우선으로 하는 눈 건강분야에서
+                            손꼽히는 브랜드
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#void">
+                        <img src="images/alcon.jpg" alt="" />
+                        <div class="txt">
+                          <p>ALCON</p>
+                          <p>시력개선을 돕는 안과 치료 분야의 글로벌 리더 브랜드</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#void">
+                        <img src="images/coopervision.jpg" alt="" />
+                        <div class="txt">
+                          <p>COOPERVISION</p>
+                          <p>
+                            혁신적이며 광범위한 콘택트렌즈 처방 옵션을 보유한 브랜드
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#void">
+                        <img src="images/interojo.jpg" alt="" />
+                        <div class="txt">
+                          <p>INTEROJO</p>
+                          <p>최고의 건강과 아름다움을 제공하는 콘택트렌즈 브랜드</p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="cir">
+                    <li>
+                      <a href="#void"><img src="images/acuvue.jpg" alt="" /></a>
+                    </li>
+                    <li>
+                      <a href="#void"><img src="images/bauschlomb.jpg" alt="" /></a>
+                    </li>
+                    <li>
+                      <a href="#void"><img src="images/alcon.jpg" alt="" /></a>
+                    </li>
+                    <li>
+                      <a href="#void"><img src="images/coopervision.jpg" alt="" /></a>
+                    </li>
+                    <li>
+                      <a href="#void"><img src="images/interojo.jpg" alt="" /></a>
+                    </li>
+                  </ul>
+                </div>
+              </div> -->
+                </div>
+                <div class="downArrow">
+                  <a href="#void"
+                    ><img src="images/circle_down_arrow.svg" alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="section">
+            <h1>section2</h1>
+            <div class="slide">slide1</div>
+            <div class="slide">slide2</div>
+            <div class="slide">slide3</div>
+        </div>
+        <div class="section">
+            <h1>section3</h1>
+        </div>
+        <div class="section">
+            <h1>section4</h1>
+        </div>
+    </div>
+   
+    <script>
+        var myFull = new fullpage("#fullpage",{
+            sectionsColor:["pink","#ddd","skyblue","yellow"],
+            menu:"#menu",
+            anchors:["section1","section2","section3","section4"],
+            navigation:true,
+            navigationTooltips:["p1","p2","full","dsaf"],
+            showActiveTooltip:true
+        })
+    </script>
+</body>
+</html>

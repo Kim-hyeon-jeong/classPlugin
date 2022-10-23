@@ -1,0 +1,25 @@
+.banner img{
+    width:100%;
+}
+.innerBox{
+    max-width:1200px;
+    margin:0 auto;
+}
+.list li{
+    padding:5px;
+    box-sizing: border-box;
+}
+/* 왜 이미지 100프로 와이드 주면 사진크기 정렬 잘되지? */
+.list img, 
+.list2 img{
+    width:100%;
+}
+.list2 .slick-slide img{
+    padding:20px;
+    box-sizing: border-box;
+    transition:0.5s;
+}
+.list2 .slick-center img{
+    transform: scale(1.1);
+}
+

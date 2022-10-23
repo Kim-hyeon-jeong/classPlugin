@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/flip.min.css">
+    <style>
+        .tick-group{
+            margin:0 20px;
+        }
+        .tick-label{
+            font-size: 20px;
+        }
+    </style>
+    <script src="js/flip.min.js"></script>
+    <script>
+        function handleTickInit(tick) {
+            var nextYear = (new Date()).getFullYear();
+  
+            Tick.count.down(nextYear + '-09-05').onupdate = function(value) {
+            tick.value = value;
+        };
+}
+    </script>
+</head>
+<body>
+    <div class="tick"
+     data-did-init="handleTickInit">
+    <div data-repeat="true"
+         data-layout="horizontal center fit"
+         data-transform="preset(d, h, m, s) -> delay">
+        <div class="tick-group">
+            <div data-key="value"
+                 data-repeat="true"
+                 data-transform="pad(00) -> split -> delay">
+                <span data-view="flip"></span>
+            </div>
+            <span data-key="label"
+                  data-view="text"
+                  class="tick-label"></span>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

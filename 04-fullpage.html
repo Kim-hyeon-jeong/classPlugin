@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fullpage.css">
+    <style>
+        #menu{
+            position:fixed;
+            z-index: 1000;
+            display: flex;
+        }
+        #menu>li{
+            margin:10px;
+        }
+        #fullpage .section{
+            padding-top:100px;
+        }
+    </style>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/fullpage.js"></script>
+</head>
+<body>
+    <ul id="menu">
+        <li><a href="#section1">menu1</a></li>
+        <li><a href="#section2">menu2</a></li>
+        <li><a href="#section3">menu3</a></li>
+        <li><a href="#section4">menu4</a></li>
+    </ul>
+    <div id="fullpage">
+        <div class="section">
+            <h1>section1</h1>
+        </div>
+        <div class="section">
+            <h1>section2</h1>
+            <div class="slide">slide1</div>
+            <div class="slide">slide2</div>
+            <div class="slide">slide3</div>
+        </div>
+        <div class="section">
+            <h1>section3</h1>
+        </div>
+        <div class="section">
+            <h1>section4</h1>
+        </div>
+    </div>
+   
+    <script>
+        var myFull = new fullpage("#fullpage",{
+            sectionsColor:["pink","#ddd","skyblue","yellow"],
+            menu:"#menu",
+            anchors:["section1","section2","section3","section4"],
+            navigation:true,
+            navigationTooltips:["p1","p2","full","dsaf"],
+            showActiveTooltip:true,
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/1-bxslider.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script>
+        $(function(){
+            $(".banner").bxSlider({
+                "mode":"fade",
+                auto:true,
+                pager:false
+            });
+            $(".list").bxSlider({
+                maxSlides:4,
+                minSlides:2,
+                slideWidth:300,
+                slideMargin:10,
+                moveSlides:1
+            })
+        })
+    </script>
+</head>
+<body>
+    <div id="mainBanner">
+        <ul class="banner">
+            <li><a href="#"><img src="images/mainBanner_01.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/mainBanner_02.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/mainBanner_03.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/mainBanner_04.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/mainBanner_05.jpg" alt=""></a></li>
+        </ul>
+    </div>
+    <div id="container">
+        <section class="innerBox listWrap">
+            <ul class="list">
+                <li><a href="#"><img src="images/_01.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/_02.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/_03.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/_04.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/_05.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/_06.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/_07.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/_08.jpg" alt=""></a></li>
+            </ul>
+            <ul id="btn">
+                <li><a href="#" data-slide-index="0">1</a></li>
+                <li><a href="#" data-slide-index="1">2</a></li>
+                <li><a href="#" data-slide-index="2">3</a></li>
+                <li><a href="#" data-slide-index="3">4</a></li>
+                <li><a href="#" data-slide-index="4">5</a></li>
+                <li><a href="#" data-slide-index="5">6</a></li>
+                <li><a href="#" data-slide-index="6">7</a></li>
+                <li><a href="#" data-slide-index="7">8</a></li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/flipclock.css" />
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/flipclock.min.js"></script>
+    <script>
+        //폴더에 있는 샘플 참고하기
+      $(function () {
+        var clock = $(".clock").FlipClock({
+            // clockFace : "DailyCounter"
+          clockFace: "DailyCounter",
+          autoStart: true
+        });
+        // set time
+        //초단위로 쓰기 하루: 24*60*60
+        clock.setTime(24*60*60*30);
+
+        // countdown mode
+        //(true)하면 카운트다운모드
+        clock.setCountdown(true);
+
+        // start the clock
+        clock.start();
+      });
+    </script>
+  </head>
+  <body>
+    <div class="clock"></div>
+  </body>
+</html>
